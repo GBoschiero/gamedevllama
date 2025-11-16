@@ -23,6 +23,7 @@
                     <li class="active"><a href="blog.html">Devlog & Tutorials</a></li>
                     <li><a href="roadmap.html">Roadmap</a></li>
                     <li><a href="projects.html">Projects</a></li>
+                    <li><a href="llama-vtt.html">Llama VTT</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
@@ -30,33 +31,144 @@
             <!-- Main -->
             <div id="main">
 
+                <!-- Page header -->
                 <section class="post">
                     <header class="major">
                         <h1>Devlog & Tutorials</h1>
-                        <p>Progress updates, VTT development logs, Unreal Engine tips, and tutorials.</p>
+                        <p>Progress updates, Unreal Engine deep dives, and Llama VTT devlogs.</p>
                     </header>
-
-                    <p>Welcome to the devlog! This page will hold:</p>
-                    <ul>
-                        <li>Major progress updates on the Llama VTT</li>
-                        <li>Technical deep dives into Unreal Engine systems</li>
-                        <li>Tutorial posts</li>
-                        <li>Behind-the-scenes development notes</li>
-                    </ul>
                 </section>
+
+                <!-- Blog post list -->
+                <section class="posts">
+
+                    <!-- POST CARD 1 -->
+                    <article>
+                        <header>
+                            <span class="date">Feb 2025</span>
+                            <h2><a href="blog-llama-vtt-core-systems.html">
+                                Llama VTT – Core Systems Overview
+                            </a></h2>
+                        </header>
+                        <a href="blog-llama-vtt-core-systems.html" class="image fit">
+                            <img src="images/pic02.jpg" alt="" />
+                        </a>
+                        <p>High-level breakdown of the initial grid, camera, and token systems powering the custom VTT.</p>
+                        <ul class="actions special">
+                            <li><a href="blog-llama-vtt-core-systems.html" class="button">Read More</a></li>
+                        </ul>
+                    </article>
+
+                    <!-- POST CARD 2 -->
+                    <article>
+                        <header>
+                            <span class="date">Feb 2025</span>
+                            <h2><a href="blog-unreal-tools-workflow.html">
+                                Building My Unreal Tools Workflow
+                            </a></h2>
+                        </header>
+                        <a href="blog-unreal-tools-workflow.html" class="image fit">
+                            <img src="images/pic03.jpg" alt="" />
+                        </a>
+                        <p>How I organize plugins, utility blueprints, and editor tools to keep multiple projects manageable.</p>
+                        <ul class="actions special">
+                            <li><a href="blog-unreal-tools-workflow.html" class="button">Read More</a></li>
+                        </ul>
+                    </article>
+
+                    <!-- POST CARD 3 -->
+                    <article>
+                        <header>
+                            <span class="date">Feb 2025</span>
+                            <h2><a href="blog-topdown-tokens-pipeline.html">
+                                Top-Down Token Rendering Pipeline
+                            </a></h2>
+                        </header>
+                        <a href="blog-topdown-tokens-pipeline.html" class="image fit">
+                            <img src="images/pic04.jpg" alt="" />
+                        </a>
+                        <p>A look at how I generate VTT tokens from 3D characters: camera setup, lighting, and export workflow.</p>
+                        <ul class="actions special">
+                            <li><a href="blog-topdown-tokens-pipeline.html" class="button">Read More</a></li>
+                        </ul>
+                    </article>
+
+                    <!-- Add more <article> cards here as you create posts -->
+
+                </section>
+
+                <!-- Pagination (can expand later) -->
+                <footer>
+                    <div class="pagination">
+                        <a class="page active">1</a>
+                    </div>
+                </footer>
 
             </div>
 
-            <!-- Footer -->
-            <footer id="footer"></footer>
+            <!-- Footer (contact) -->
+            <footer id="footer">
+                <section>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" /></li>
+                        </ul>
+                    </form>
+                </section>
+
+                <section class="split contact">
+                    <section class="alt">
+                        <h3>Address</h3>
+                        <p>1234 Somewhere Road #87257<br />
+                        Nashville, TN 00000-0000</p>
+                    </section>
+                    <section>
+                        <h3>Phone</h3>
+                        <p><a href="#">(000) 000-0000</a></p>
+                    </section>
+                    <section>
+                        <h3>Email</h3>
+                        <p><a href="#">info@gamedevllama.com</a></p>
+                    </section>
+                    <section>
+                        <h3>Social</h3>
+                        <ul class="icons alt">
+                            <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
 
             <!-- Copyright -->
             <div id="copyright">
-                <ul><li>&copy; GameDevLlama</li></ul>
+                <ul><li>&copy; GameDevLlama</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
             </div>
-
         </div>
 
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
 
     </body>
