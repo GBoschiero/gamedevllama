@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameDevLlama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #0f0f17;
+            color: #f9fafb;
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            max-width: 700px;
+            padding: 2.5rem 2rem;
+            border-radius: 14px;
+            background: linear-gradient(145deg, #1a1a2e, #12121d);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        h1 {
+            margin: 0 0 1rem;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+        h1 span {
+            color: #7dd3fc;
+        }
+        p {
+            margin: 0.25rem 0;
+            line-height: 1.55;
+            color: #d1d5db;
+        }
+        .links {
+            margin-top: 1.7rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+        .btn {
+            padding: 0.6rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.15);
+            text-decoration: none;
+            color: #e5e7eb;
+            font-size: 0.85rem;
+            transition: background 0.15s ease, transform 0.1s ease;
+        }
+        .btn:hover {
+            background: rgba(255,255,255,0.05);
+            transform: translateY(-1px);
+        }
+        .primary {
+            background: linear-gradient(135deg, #22d3ee, #6366f1);
+            color: #0f0f17;
+            border: none;
+            font-weight: 600;
+        }
+        .primary:hover {
+            filter: brightness(1.05);
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1>Hello, I'm <span>GameDevLlama</span> 🦙</h1>
+        <p>I make games, tools, Unreal Engine systems, and a fully custom VTT from scratch.</p>
+        <p>This website will be the central hub for my devlogs, projects, art, and experiments.</p>
+
+        <div class="links">
+            <a class="btn primary" href="#">Projects (coming soon)</a>
+            <a class="btn" href="#">Twitch</a>
+            <a class="btn" href="#">Patreon</a>
+            <a class="btn" href="#">Contact</a>
+        </div>
+    </main>
+</body>
+</html>
